@@ -1,0 +1,24 @@
+/* notification_app_fe/app/globals.css */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 245, 245, 245; /* Light gray background for better contrast */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; /* Standard MUI fonts */
+}
+
+/* Ensure the app takes up full height for mobile responsiveness */
+html, body, #__next {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}

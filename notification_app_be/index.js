@@ -16,7 +16,6 @@ async function getPriorityInbox() {
         processAndDisplay(rawLogs);
     } catch (error) {
         console.log("External API unreachable. Using local evaluation data for Stage 1 demo...");
-        // This sample data matches the exact format in your screenshots
         const mockData = [
             { "ID": "1", "Type": "Result", "Message": "mid-sem", "Timestamp": "2026-04-22 17:51:30" },
             { "ID": "2", "Type": "Placement", "Message": "CSX Corp hiring", "Timestamp": "2026-04-22 17:51:18" },
@@ -37,7 +36,7 @@ function processAndDisplay(data) {
     });
 
     const top10 = sortedNotifs.slice(0, 10);
-    console.log("\n--- Stage 1: Priority Inbox (Top 10) ---");
+    console.log("\nStage 1: Priority Inbox (Top 10)");
     console.table(top10);
 }
 
